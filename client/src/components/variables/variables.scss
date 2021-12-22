@@ -1,0 +1,26 @@
+//Colors Pallates
+$orange:#FC4445;
+$yellow:#dafc44;
+$blue-light:#3FEEE6;
+$blue-gray:#55BCC9;
+$blue-purple:#97CAEF;
+$blue-soft:#CAFAFE;
+
+//Mixins ( a media query for screen sizes )
+@mixin for-tablet {
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+@mixin for-laptop {
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (min-width:1200){
+        @content;
+    }
+}
